@@ -1,25 +1,35 @@
-import React from 'react';
-import TaskList from './components/TaskList';
-import MovieList from './components/MovieList';
+import React from 'react'
+import ProfileList from './components/ProfileList';
 
-// const tasks = [
-//     {id: 1, title: "Learn React Fundamentals", isCompleted: true},
-//     {id: 2, title: "Pratice Props and Conditonal Rendering", isCompleted: false},
-//     {id: 3, title: "Build a To-Do-List App", isCompleted: false},
-// ]
-
-const movies = [
-  {id: 1, title:"Inception", year: 2010, isWatched: true},
-  {id: 2, title:"The Matrix", year: 1999, isWatched: false},
-  {id: 3, title:"Interstellar", year: 2014, isWatched: true},
+const profiles = [
+  {
+    id: 1,
+    name: 'Austine Alex',
+    role: 'Software Engineer',
+    isOnline: true,
+    avatar: "https://via.placeholder.com/150",
+  },
+  {
+    id: 2,
+    name: 'Jane Smith',
+    role: 'UI/U Designer',
+    isOnline: false,
+    avatar: "https://via.placeholder.com/150",
+  },
+  {
+    id: 3,
+    name: 'Samuel Green',
+    role: 'Project Manager',
+    isOnline: true,
+    avatar: "https://via.placeholder.com/150",
+  },
 ];
 
 const App = () => {
   return (
     <div>
-        <h1>MOVIES APP ✔</h1>
-        <MovieList movie={ movies } />
-        {/* <TaskList task={ tasks } /> */}
+      <h1>Profile Cards Exercise</h1>
+      <ProfileList profile={ profiles } />
     </div>
   )
 }
